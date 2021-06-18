@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+padding:0;
+margin: 0;
+}
+body{
+    background-color: hsl(0,100%,74%);
+    background-image: url("./bg-intro-mobile.png");
+    background-size: cover;
+    font-family: "poppins", sans-serif;
+    background-repeat: no-repeat;
+    color: white;
+}
+.container{
+    padding: 20px;
+}
+.learn{
+    margin: 10px;
+    text-align: center;
+}
+.learn h1{
+    text-transform: capitalize;
+    font-size:36px;
+}
+.learn p{
+    font-size: 16px;
+    padding: 10px 0;
+}
+ .form-container{
+    margin: 10px;
+    color: black;  
+}
+.try{
+    padding: 12px;
+    background-color: hsl(249,32%,49%);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+.try > a{
+    color: white;
+    text-decoration: none;
+}
+.try > b{
+    font-weight: 600px;
+}
+  
+
+.try > a:hover{
+    color: white;
+}
+.form-content{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 10px 2px -2px hsl(0,46%,30%);
+    box-sizing: border-box;
+}
+input{
+    width: 90%;
+    background: #ffff;
+    padding: 15px;
+    border-radius: 10px;
+    border-color: hsl(246,25%,77%);
+    color: hsl(249,10%,26%);
+    margin-bottom: 1rem;
+}
+
+.form-btn{
+    background-color: hsl(154,59%,51%);
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    background-color: hsl (154,59%,51%);
+    text-transform: uppercase;
+}
+.terms > a{
+    color: red;
+    text-decoration: none;
+}
+
+/* tablet view */
+@media only screen and (min-width: 600px) {
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+    }
+    .container > div{
+        flex: 1;
+    }
+    .learn{
+        text-align: left;
+    }
+    .learn h2{
+        font-size: 40px;
+
+    }
+    .learn p{
+        font-size: 20px;
+    }
+}
+/* desktop view */
+@media only screen and (min-width: 768px) {
+    body{
+        background-image: url("./bg-intro-desktop.png");
+    }
+    .container{
+        padding: 80px;
+    }
+}
